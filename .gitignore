@@ -1,0 +1,13 @@
+all_crops/
+seg_runs/
+training_dataset/
+visualization/
+./src/run_seg_train.sh
+saved_models/
+TDP-43_results.pptx
+tiles-npy/
+*.csv
+*.h5
+*.pt
+*.tiff
+__pycache__/

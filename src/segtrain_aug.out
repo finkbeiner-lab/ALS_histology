@@ -1,0 +1,187 @@
+Using cache found in /gladstone/finkbeiner/home/mahirwar/.cache/torch/hub/facebookresearch_dinov2_main
+/gladstone/finkbeiner/home/mahirwar/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+/gladstone/finkbeiner/home/mahirwar/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+/gladstone/finkbeiner/home/mahirwar/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+DinoVisionTransformer(
+  (patch_embed): PatchEmbed(
+    (proj): Conv2d(3, 768, kernel_size=(14, 14), stride=(14, 14))
+    (norm): Identity()
+  )
+  (blocks): ModuleList(
+    (0-11): 12 x NestedTensorBlock(
+      (norm1): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+      (attn): MemEffAttention(
+        (qkv): Linear(in_features=768, out_features=2304, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=768, out_features=768, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (ls1): LayerScale()
+      (drop_path1): Identity()
+      (norm2): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=768, out_features=3072, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=3072, out_features=768, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+      (ls2): LayerScale()
+      (drop_path2): Identity()
+    )
+  )
+  (norm): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+  (head): Identity()
+)
+Epoch 1, Train Loss: 0.2293, Val Loss: 0.1688
+Test Loss: 0.1688, Test Accuracy: 1.78%,  Test avg class Accuracy: 20.82%
+Epoch 2, Train Loss: 0.1875, Val Loss: 0.1530
+Test Loss: 0.1530, Test Accuracy: 1.86%,  Test avg class Accuracy: 19.87%
+Epoch 3, Train Loss: 0.1784, Val Loss: 0.1533
+Test Loss: 0.1533, Test Accuracy: 2.06%,  Test avg class Accuracy: 24.46%
+Epoch 4, Train Loss: 0.1753, Val Loss: 0.1487
+Test Loss: 0.1487, Test Accuracy: 2.22%,  Test avg class Accuracy: 26.77%
+Epoch 5, Train Loss: 0.1720, Val Loss: 0.1514
+Test Loss: 0.1514, Test Accuracy: 2.13%,  Test avg class Accuracy: 26.32%
+Epoch 6, Train Loss: 0.1693, Val Loss: 0.1493
+Test Loss: 0.1493, Test Accuracy: 1.99%,  Test avg class Accuracy: 26.52%
+Epoch 7, Train Loss: 0.1677, Val Loss: 0.1500
+Test Loss: 0.1500, Test Accuracy: 2.08%,  Test avg class Accuracy: 26.46%
+Epoch 8, Train Loss: 0.1656, Val Loss: 0.1481
+Test Loss: 0.1481, Test Accuracy: 2.15%,  Test avg class Accuracy: 26.76%
+Epoch 9, Train Loss: 0.1646, Val Loss: 0.1503
+Test Loss: 0.1503, Test Accuracy: 2.08%,  Test avg class Accuracy: 25.28%
+Epoch 10, Train Loss: 0.1628, Val Loss: 0.1474
+Test Loss: 0.1474, Test Accuracy: 2.20%,  Test avg class Accuracy: 26.82%
+Epoch 11, Train Loss: 0.1614, Val Loss: 0.1446
+Test Loss: 0.1446, Test Accuracy: 2.22%,  Test avg class Accuracy: 27.42%
+Epoch 12, Train Loss: 0.1604, Val Loss: 0.1537
+Test Loss: 0.1537, Test Accuracy: 1.53%,  Test avg class Accuracy: 20.10%
+Epoch 13, Train Loss: 0.1587, Val Loss: 0.1510
+Test Loss: 0.1510, Test Accuracy: 2.27%,  Test avg class Accuracy: 28.56%
+Epoch 14, Train Loss: 0.1569, Val Loss: 0.1527
+Test Loss: 0.1527, Test Accuracy: 2.06%,  Test avg class Accuracy: 25.83%
+Epoch 15, Train Loss: 0.1562, Val Loss: 0.1496
+Test Loss: 0.1496, Test Accuracy: 2.09%,  Test avg class Accuracy: 26.98%
+Epoch 16, Train Loss: 0.1560, Val Loss: 0.1521
+Test Loss: 0.1521, Test Accuracy: 2.00%,  Test avg class Accuracy: 26.94%
+Epoch 17, Train Loss: 0.1533, Val Loss: 0.1470
+Test Loss: 0.1470, Test Accuracy: 2.30%,  Test avg class Accuracy: 28.06%
+Epoch 18, Train Loss: 0.1532, Val Loss: 0.1516
+Test Loss: 0.1516, Test Accuracy: 2.27%,  Test avg class Accuracy: 26.94%
+Epoch 19, Train Loss: 0.1511, Val Loss: 0.1575
+Test Loss: 0.1575, Test Accuracy: 2.19%,  Test avg class Accuracy: 25.64%
+Epoch 20, Train Loss: 0.1497, Val Loss: 0.1563
+Test Loss: 0.1563, Test Accuracy: 2.05%,  Test avg class Accuracy: 22.21%
+Epoch 21, Train Loss: 0.1487, Val Loss: 0.1511
+Test Loss: 0.1511, Test Accuracy: 1.99%,  Test avg class Accuracy: 27.78%
+Epoch 22, Train Loss: 0.1473, Val Loss: 0.1530
+Test Loss: 0.1530, Test Accuracy: 2.28%,  Test avg class Accuracy: 27.97%
+Epoch 23, Train Loss: 0.1451, Val Loss: 0.1523
+Test Loss: 0.1523, Test Accuracy: 2.36%,  Test avg class Accuracy: 27.85%
+Epoch 24, Train Loss: 0.1450, Val Loss: 0.1571
+Test Loss: 0.1571, Test Accuracy: 1.89%,  Test avg class Accuracy: 24.94%
+Epoch 25, Train Loss: 0.1429, Val Loss: 0.1678
+Test Loss: 0.1678, Test Accuracy: 1.69%,  Test avg class Accuracy: 22.42%
+Epoch 26, Train Loss: 0.1409, Val Loss: 0.1555
+Test Loss: 0.1555, Test Accuracy: 1.85%,  Test avg class Accuracy: 23.70%
+Epoch 27, Train Loss: 0.1404, Val Loss: 0.1547
+Test Loss: 0.1547, Test Accuracy: 2.13%,  Test avg class Accuracy: 25.37%
+Epoch 28, Train Loss: 0.1396, Val Loss: 0.1631
+Test Loss: 0.1631, Test Accuracy: 1.86%,  Test avg class Accuracy: 25.07%
+Epoch 29, Train Loss: 0.1393, Val Loss: 0.1576
+Test Loss: 0.1576, Test Accuracy: 2.24%,  Test avg class Accuracy: 26.60%
+Epoch 30, Train Loss: 0.1356, Val Loss: 0.1627
+Test Loss: 0.1627, Test Accuracy: 2.15%,  Test avg class Accuracy: 24.62%
+Epoch 31, Train Loss: 0.1350, Val Loss: 0.1620
+Test Loss: 0.1620, Test Accuracy: 2.24%,  Test avg class Accuracy: 26.91%
+Epoch 32, Train Loss: 0.1345, Val Loss: 0.1633
+Test Loss: 0.1633, Test Accuracy: 1.99%,  Test avg class Accuracy: 25.18%
+Epoch 33, Train Loss: 0.1323, Val Loss: 0.1584
+Test Loss: 0.1584, Test Accuracy: 2.19%,  Test avg class Accuracy: 23.82%
+Epoch 34, Train Loss: 0.1310, Val Loss: 0.1567
+Test Loss: 0.1567, Test Accuracy: 2.09%,  Test avg class Accuracy: 25.42%
+Epoch 35, Train Loss: 0.1306, Val Loss: 0.1602
+Test Loss: 0.1602, Test Accuracy: 2.05%,  Test avg class Accuracy: 24.19%
+Epoch 36, Train Loss: 0.1286, Val Loss: 0.1577
+Test Loss: 0.1577, Test Accuracy: 2.34%,  Test avg class Accuracy: 28.99%
+Epoch 37, Train Loss: 0.1283, Val Loss: 0.1648
+Test Loss: 0.1648, Test Accuracy: 1.97%,  Test avg class Accuracy: 25.12%
+Epoch 38, Train Loss: 0.1252, Val Loss: 0.1671
+Test Loss: 0.1671, Test Accuracy: 2.18%,  Test avg class Accuracy: 26.71%
+Epoch 39, Train Loss: 0.1248, Val Loss: 0.1593
+Test Loss: 0.1593, Test Accuracy: 2.34%,  Test avg class Accuracy: 27.47%
+Epoch 40, Train Loss: 0.1238, Val Loss: 0.1715
+Test Loss: 0.1715, Test Accuracy: 2.44%,  Test avg class Accuracy: 27.86%
+Epoch 41, Train Loss: 0.1230, Val Loss: 0.1649
+Test Loss: 0.1649, Test Accuracy: 2.22%,  Test avg class Accuracy: 26.76%
+Epoch 42, Train Loss: 0.1221, Val Loss: 0.1645
+Test Loss: 0.1645, Test Accuracy: 2.25%,  Test avg class Accuracy: 27.23%
+Epoch 43, Train Loss: 0.1194, Val Loss: 0.1644
+Test Loss: 0.1644, Test Accuracy: 2.08%,  Test avg class Accuracy: 23.92%
+Epoch 44, Train Loss: 0.1181, Val Loss: 0.1754
+Test Loss: 0.1754, Test Accuracy: 2.02%,  Test avg class Accuracy: 22.56%
+Epoch 45, Train Loss: 0.1170, Val Loss: 0.1754
+Test Loss: 0.1754, Test Accuracy: 1.99%,  Test avg class Accuracy: 24.57%
+Epoch 46, Train Loss: 0.1161, Val Loss: 0.1694
+Test Loss: 0.1694, Test Accuracy: 2.13%,  Test avg class Accuracy: 22.54%
+Epoch 47, Train Loss: 0.1132, Val Loss: 0.1729
+Test Loss: 0.1729, Test Accuracy: 2.30%,  Test avg class Accuracy: 27.27%
+Epoch 48, Train Loss: 0.1131, Val Loss: 0.1689
+Test Loss: 0.1689, Test Accuracy: 2.09%,  Test avg class Accuracy: 24.80%
+Epoch 49, Train Loss: 0.1099, Val Loss: 0.1784
+Test Loss: 0.1784, Test Accuracy: 2.22%,  Test avg class Accuracy: 25.86%
+Epoch 50, Train Loss: 0.1061, Val Loss: 0.1844
+Test Loss: 0.1844, Test Accuracy: 1.73%,  Test avg class Accuracy: 21.11%
+Epoch 51, Train Loss: 0.1015, Val Loss: 0.1793
+Test Loss: 0.1793, Test Accuracy: 2.14%,  Test avg class Accuracy: 24.17%
+Epoch 52, Train Loss: 0.0991, Val Loss: 0.1606
+Test Loss: 0.1606, Test Accuracy: 2.25%,  Test avg class Accuracy: 25.29%
+Epoch 53, Train Loss: 0.0916, Val Loss: 0.1795
+Test Loss: 0.1795, Test Accuracy: 1.98%,  Test avg class Accuracy: 23.31%
+Epoch 54, Train Loss: 0.0906, Val Loss: 0.1591
+Test Loss: 0.1591, Test Accuracy: 2.39%,  Test avg class Accuracy: 27.32%
+Epoch 55, Train Loss: 0.0847, Val Loss: 0.1580
+Test Loss: 0.1580, Test Accuracy: 2.40%,  Test avg class Accuracy: 26.78%
+Epoch 56, Train Loss: 0.0821, Val Loss: 0.1610
+Test Loss: 0.1610, Test Accuracy: 2.52%,  Test avg class Accuracy: 26.97%
+Epoch 57, Train Loss: 0.0774, Val Loss: 0.1516
+Test Loss: 0.1516, Test Accuracy: 2.38%,  Test avg class Accuracy: 27.22%
+Epoch 58, Train Loss: 0.0753, Val Loss: 0.1556
+Test Loss: 0.1556, Test Accuracy: 2.46%,  Test avg class Accuracy: 27.39%
+Epoch 59, Train Loss: 0.0758, Val Loss: 0.1593
+Test Loss: 0.1593, Test Accuracy: 2.62%,  Test avg class Accuracy: 27.82%
+Epoch 60, Train Loss: 0.0726, Val Loss: 0.1687
+Test Loss: 0.1687, Test Accuracy: 2.45%,  Test avg class Accuracy: 27.10%
+Epoch 61, Train Loss: 0.0674, Val Loss: 0.1669
+Test Loss: 0.1669, Test Accuracy: 2.28%,  Test avg class Accuracy: 25.17%
+Epoch 62, Train Loss: 0.0668, Val Loss: 0.1636
+Test Loss: 0.1636, Test Accuracy: 2.38%,  Test avg class Accuracy: 25.27%
+Epoch 63, Train Loss: 0.0647, Val Loss: 0.1674
+Test Loss: 0.1674, Test Accuracy: 2.48%,  Test avg class Accuracy: 26.03%
+Epoch 64, Train Loss: 0.0620, Val Loss: 0.1651
+Test Loss: 0.1651, Test Accuracy: 2.54%,  Test avg class Accuracy: 26.59%
+Epoch 65, Train Loss: 0.0608, Val Loss: 0.1634
+Test Loss: 0.1634, Test Accuracy: 2.70%,  Test avg class Accuracy: 29.28%
+Epoch 66, Train Loss: 0.0573, Val Loss: 0.1572
+Test Loss: 0.1572, Test Accuracy: 2.85%,  Test avg class Accuracy: 30.49%
+Epoch 67, Train Loss: 0.0589, Val Loss: 0.1726
+Test Loss: 0.1726, Test Accuracy: 2.33%,  Test avg class Accuracy: 27.19%
+Epoch 68, Train Loss: 0.0559, Val Loss: 0.1860
+Test Loss: 0.1860, Test Accuracy: 2.59%,  Test avg class Accuracy: 27.99%
+Epoch 69, Train Loss: 0.0528, Val Loss: 0.1672
+Test Loss: 0.1672, Test Accuracy: 2.47%,  Test avg class Accuracy: 27.02%
+Epoch 70, Train Loss: 0.0550, Val Loss: 0.1717
+Test Loss: 0.1717, Test Accuracy: 2.67%,  Test avg class Accuracy: 29.24%
+Epoch 71, Train Loss: 0.0541, Val Loss: 0.1770
+Test Loss: 0.1770, Test Accuracy: 2.84%,  Test avg class Accuracy: 30.65%
+Epoch 72, Train Loss: 0.0504, Val Loss: 0.1682
+Test Loss: 0.1682, Test Accuracy: 2.77%,  Test avg class Accuracy: 29.41%
+Epoch 73, Train Loss: 0.0528, Val Loss: 0.1661
+Test Loss: 0.1661, Test Accuracy: 2.69%,  Test avg class Accuracy: 27.09%
+Epoch 74, Train Loss: 0.0465, Val Loss: 0.1863
+Test Loss: 0.1863, Test Accuracy: 2.67%,  Test avg class Accuracy: 29.66%
+Epoch 75, Train Loss: 0.0495, Val Loss: 0.1742
+Test Loss: 0.1742, Test Accuracy: 2.56%,  Test avg class Accuracy: 27.06%
